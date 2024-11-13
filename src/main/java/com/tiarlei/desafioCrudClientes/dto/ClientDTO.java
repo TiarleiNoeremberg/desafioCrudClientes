@@ -17,7 +17,7 @@ public class ClientDTO {
     private String cpf;
     @Positive(message = "A renda deve ser um valor positivo")
     private Double income;
-    @PastOrPresent
+    @PastOrPresent(message = "Este campo não permite uma data futura")
     private LocalDate birthDate;
     private Integer children;
 
